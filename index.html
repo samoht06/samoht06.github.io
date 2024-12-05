@@ -3,67 +3,100 @@
 <head>
   <meta charset="UTF-8">
 
-  <title>Memory Game</title>
+  <title>jeu de mémoire</title>
 
+  
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+  <script src="scripts.js"></script>
+
+  <p id="timer">Temps écoulé : 0s</p>
+  
+  <dialog id="dialog" class="dialog">
+    <h1>projet personnel</h1>
+<div id="contenu">
+<div id="texte">
+  <p><b>réaliser par</b><br><i>Thomas Noël</i></p>
+<p><b>inspiration</b><br>
+  <a href="https://marina-ferreira.github.io/memory-game/" target="_blank">
+  </a>
+  </p>
+</div>
+<div id="image"><img src="images/megaman.png" alt="image de megaman"></div>
+</div>
+<div class="button">
+  <button id="closeDialog">Fermer</button>
+</div>
+    <i><a href="#" id="disable-dialog" class="close-link">ne plus afficher cette fenêtre</a></i>
+</dialog>
+
+
+
   <section class="memory-game">
-    <div class="memory-card" data-framework="aurelia">
-      <img class="front-face" src="../img/aurelia.svg" alt="Aurelia" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
+    <div class="memory-card" data-framework="force_spéciale">
+      <img class="front-face" src="C:\Users\tnoel\projets\designweb\projet_personnel\samoht06.github.io\images\1st_Special_Service_Force_SSI.svg.png" alt="1ere force spéciale" />
+      <img class="back-face" src="C:\Users\tnoel\projets\designweb\projet_personnel\samoht06.github.io\images\drapeau.jpg" alt="drapeau" />
     </div>
-    <div class="memory-card" data-framework="aurelia">
-      <img class="front-face" src="../img/aurelia.svg" alt="Aurelia" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
-    </div>
-
-    <div class="memory-card" data-framework="vue">
-      <img class="front-face" src="../img/vue.svg" alt="Vue" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
-    </div>
-    <div class="memory-card" data-framework="vue">
-      <img class="front-face" src="../img/vue.svg" alt="Vue" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
+    <div class="memory-card" data-framework="force_spéciale">
+      <img class="front-face" src="C:\Users\tnoel\projets\designweb\projet_personnel\samoht06.github.io\images\1st_Special_Service_Force_SSI.svg.png" alt="1ere force spéciale" />
+      <img class="back-face" src="C:\Users\tnoel\projets\designweb\projet_personnel\samoht06.github.io\images\drapeau.jpg" alt="drapeau" />
     </div>
 
-    <div class="memory-card" data-framework="angular">
-      <img class="front-face" src="../img/angular.svg" alt="Angular" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
+    <div class="memory-card" data-framework="2eme_division">
+      <img class="front-face" src="C:\Users\tnoel\projets\designweb\projet_personnel\samoht06.github.io\images\2nd_Canadian_Division_formation_patch.svg.png" alt="2eme division" />
+      <img class="back-face" src="C:\Users\tnoel\projets\designweb\projet_personnel\samoht06.github.io\images\drapeau.jpg" alt="drapeau" />
     </div>
-    <div class="memory-card" data-framework="angular">
-      <img class="front-face" src="../img/angular.svg" alt="Angular" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
-    </div>
-
-    <div class="memory-card" data-framework="ember">
-      <img class="front-face" src="../img/ember.svg" alt="Ember" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
-    </div>
-    <div class="memory-card" data-framework="ember">
-      <img class="front-face" src="../img/ember.svg" alt="Ember" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
+    <div class="memory-card" data-framework="2eme_division">
+      <img class="front-face" src="C:\Users\tnoel\projets\designweb\projet_personnel\samoht06.github.io\images\2nd_Canadian_Division_formation_patch.svg.png" alt="2eme division" />
+      <img class="back-face" src="C:\Users\tnoel\projets\designweb\projet_personnel\samoht06.github.io\images\drapeau.jpg" alt="drapeau" />
     </div>
 
-    <div class="memory-card" data-framework="backbone">
-      <img class="front-face" src="../img/backbone.svg" alt="Backbone" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
+    <div class="memory-card" data-framework="médaille">
+      <img class="front-face" src="C:\Users\tnoel\projets\designweb\projet_personnel\samoht06.github.io\images\Canadian_Volunteer_Service_Medal,_obverse.jpg" alt="médaille" />
+      <img class="back-face" src="C:\Users\tnoel\projets\designweb\projet_personnel\samoht06.github.io\images\drapeau.jpg" alt="drapeau" />
     </div>
-    <div class="memory-card" data-framework="backbone">
-      <img class="front-face" src="../img/backbone.svg" alt="Backbone" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
+    <div class="memory-card" data-framework="médaille">
+      <img class="front-face" src="C:\Users\tnoel\projets\designweb\projet_personnel\samoht06.github.io\images\Canadian_Volunteer_Service_Medal,_obverse.jpg" alt="médaille" />
+      <img class="back-face" src="C:\Users\tnoel\projets\designweb\projet_personnel\samoht06.github.io\images\drapeau.jpg" alt="drapeau" />
     </div>
 
-    <div class="memory-card" data-framework="react">
-      <img class="front-face" src="../img/react.svg" alt="React" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
+    <div class="memory-card" data-framework="1ere_division">
+      <img class="front-face" src="C:\Users\tnoel\projets\designweb\projet_personnel\samoht06.github.io\images\First_Canadian_Army_formation_patch.svg.png" alt="1ere_division" />
+      <img class="back-face" src="C:\Users\tnoel\projets\designweb\projet_personnel\samoht06.github.io\images\drapeau.jpg" alt="drapeau" />
     </div>
-    <div class="memory-card" data-framework="react">
-      <img class="front-face" src="../img/react.svg" alt="React" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
+    <div class="memory-card" data-framework="1ere_division">
+      <img class="front-face" src="C:\Users\tnoel\projets\designweb\projet_personnel\samoht06.github.io\images\First_Canadian_Army_formation_patch.svg.png" alt="1ere_division" />
+      <img class="back-face" src="C:\Users\tnoel\projets\designweb\projet_personnel\samoht06.github.io\images\drapeau.jpg" alt="drapeau" />
+    </div>
+
+    <div class="memory-card" data-framework="marine">
+      <img class="front-face" src="C:\Users\tnoel\projets\designweb\projet_personnel\samoht06.github.io\images\RCN_Emblem.svg.png" alt="marine" />
+      <img class="back-face" src="C:\Users\tnoel\projets\designweb\projet_personnel\samoht06.github.io\images\drapeau.jpg" alt="drapeau" />
+    </div>
+    <div class="memory-card" data-framework="marine">
+      <img class="front-face" src="C:\Users\tnoel\projets\designweb\projet_personnel\samoht06.github.io\images\RCN_Emblem.svg.png" alt="marine" />
+      <img class="back-face" src="C:\Users\tnoel\projets\designweb\projet_personnel\samoht06.github.io\images\drapeau.jpg" alt="drapeau" />
+    </div>
+
+    <div class="memory-card" data-framework="air_force">
+      <img class="front-face" src="C:\Users\tnoel\projets\designweb\projet_personnel\samoht06.github.io\images\Royal_Canadian_Air_Force_Badge.png" alt="air_force" />
+      <img class="back-face" src="C:\Users\tnoel\projets\designweb\projet_personnel\samoht06.github.io\images\drapeau.jpg" alt="drapeau" />
+    </div>
+    <div class="memory-card" data-framework="air_force">
+      <img class="front-face" src="C:\Users\tnoel\projets\designweb\projet_personnel\samoht06.github.io\images\Royal_Canadian_Air_Force_Badge.png" alt="air_force" />
+      <img class="back-face" src="C:\Users\tnoel\projets\designweb\projet_personnel\samoht06.github.io\images\drapeau.jpg" alt="drapeau" />
     </div>
   </section>
 
-  <script src="scripts.js"></script>
+  <dialog id="endDialog" style="display:flex;">
+    <h1>Félicitations, vous avez terminé !</h1>
+    <p>Cartes retournées : <span id="cardsFlipped"></span></p>
+    <p>Temps écoulé : <span id="timeElapsed"></span></p>
+    <p>Meilleur temps : <span id="bestTime"></span></p>
+    <button id="playAgain">Rejouer</button>
+  </dialog>
+
 </body>
 </html>
