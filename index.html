@@ -11,8 +11,15 @@
 <body>
 
   <script src="scripts.js"></script>
-
-  <p id="timer">Temps écoulé : 0s</p>
+<section id="compteur">
+  <div id="timer">
+    <h1 id="point">0</h1>
+    <h1 id="recordTemps"> Record : 0</h1>
+    <h1 id="compteurcarte"> Carte retournée : 0</h1>
+<h1 id="compteurTemps">Temps écoulé : 0</h1>
+  </div>
+</section>
+  
   
   <dialog id="dialog" class="dialog">
     <h1>projet personnel</h1>
@@ -27,9 +34,9 @@
 <div id="image"><img src="images/megaman.png" alt="image de megaman"></div>
 </div>
 <div class="button">
-  <button id="closeDialog">Fermer</button>
+  <button id="fermerDialog">Fermer</button>
 </div>
-    <i><a href="#" id="disable-dialog" class="close-link">ne plus afficher cette fenêtre</a></i>
+    <i><a href="#" id="nePlusAfficher" class="close-link">ne plus afficher cette fenêtre</a></i>
 </dialog>
 
 
@@ -90,7 +97,7 @@
     </div>
   </section>
 
-  <dialog id="endDialog" style="display:flex;">
+  <dialog id="finDePartie" style="display:flex;">
     <h1>Félicitations, vous avez terminé !</h1>
     <p>Cartes retournées : <span id="cardsFlipped"></span></p>
     <p>Temps écoulé : <span id="timeElapsed"></span></p>
